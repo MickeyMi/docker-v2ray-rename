@@ -24,6 +24,6 @@ RUN set -ex && \
     chmod +x /usr/bin/v2ray/v2ctl && \
     chmod +x /usr/bin/v2ray/test-v2
 
-ENV PATH /usr/bin/test-v2:$PATH
+ENV PATH /usr/bin/v2ray:$PATH
 
 CMD ["test-v2", "-config=/etc/v2ray/config.json"]
